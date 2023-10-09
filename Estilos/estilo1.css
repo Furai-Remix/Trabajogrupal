@@ -3,14 +3,18 @@
     margin: 0; padding: 0; box-sizing: border-box;
 }
     body{
-        background-color: #52525247;
         max-width: 100%;
-        padding: .5em;
-        border: 5px ridge rgba(212, 134, 39, 0.75);
+        padding: .2em;
+        border: 5px ridge rgba(200, 120, 23, 0.969);
         margin: 3px;
+        background-image: url(/Sin\ título.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
     }
 .padre{
-        background-color: rgba(255, 255, 255, 0.69);
+        background-color: rgba(95, 96, 98, 0.718);
         display: flex; justify-content: space-around;
         padding: .5vw;
         border-radius: 10px;
@@ -25,6 +29,7 @@
         font-family: cursive;
         text-align: center;
         font-size: 35%;
+        color: rgba(200, 120, 23, 0.969);
     }
 .tres{ margin: auto;
     }
@@ -38,21 +43,24 @@ main h2 {
     padding: .2em;
     text-align: center;
     margin: .5em;
-    border-left: 7px solid black;
-    border-right: 7px solid black;
+    color: rgba(0, 0, 0, 0.836);
+    background-color: rgba(95, 96, 98, 0.907);
+    border-radius: 18px;
 
     }
 img{
         max-width: 100%;
-        border-radius: 15px; 
+        border-radius: 15px;
+        border: 2px solid black 
     }
     table{ 
         padding: 5px;
         margin: auto;
         text-align: center;
         font-size: 1.5em;
-        background-color: rgba(212, 134, 39, 0.75);
+        background-color: rgba(200, 120, 23, 0.950);
         border-radius: 20px;
+        border: 2px solid black;
     }
 h3{
     margin: .7em;
@@ -64,15 +72,15 @@ h3{
 }
 .carru{
     display: flex;
-    width: 99%;
-    height: 100%;
+    width: auto;
+    height: 170px;
     margin: 1em;
     }
 .carru img{
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
-    opacity: .6;
+    opacity: .8;
     transition: .7s ease;
     }
 .carru img:hover{
@@ -94,176 +102,259 @@ p {
 footer{
     display: flex;
     justify-content: center;
-    background-color: black;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: medium;
     border-radius: 20px;
     padding: 1em;
-    border: .25em solid red;
+    border: .10em solid red;
     }
 footer h4{
     background-color: #b5b2b2;
     padding: .5em;
     border-radius: 12px;
     margin: .5em;
-}
-}
-    /* section{
-        text-align: center;
+    border: .10em solid red;
     }
-    p{
-        color: black;
-    }
-
-/* } */
+}
 @media (min-width:768px) and (max-width: 990px) {
-    body{
-            background-color: #b5b2b2;
+    *{
+        margin: 0; padding: 0; box-sizing: border-box;
+    }
+        body{
             max-width: 100%;
-            padding: .5em;
-            border: 5px ridge orange;
+            padding: .2em;
+            border: 5px ridge rgba(200, 120, 23, 0.969);
+            margin: 3px;
+            background-image: url(/Sin\ título.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
         }
     .padre{
-            display: flex; flex-direction: column;
+            background-color: rgba(95, 96, 98, 0.718);
+            display: flex; justify-content: space-around;
+            padding: .5vw;
+            border-radius: 10px;
+            border-bottom: 2px dotted black;
         }
     .uno{
-            text-align: center;
+            width: 2em;
+            margin: .2em;
         }
     .dos{
             margin: auto;
             font-family: cursive;
             text-align: center;
-            font-weight: 99%;
+            font-size: 35%;
+            color: rgba(200, 120, 23, 0.969);
+        }
+    .tres{ margin: auto;
         }
     .tres a{
-            margin:auto;
-            background-color: #ececec;
-            padding: .5em;
+            background-color: #000000;
             border-radius: 35px;
+            padding: 5px;
+            color: white;
         }
-    main p {
-            padding: .5em;
-            background-color: white;
-            border: .2em ridge black;
-            border-radius: 12px;
-            text-align: center;
-            font-size: 20px;
+    main h2 {
+        padding: .2em;
+        text-align: center;
+        margin: .5em;
+        color: rgba(0, 0, 0, 0.836);
+        background-color: rgba(95, 96, 98, 0.907);
+        border-radius: 18px;
+    
         }
-    main h2 {padding: .5em;
-            text-align: center;
-            border:8px solid rgb(255, 255, 255);}
     img{
             max-width: 100%;
+            border-radius: 15px;
+            border: 2px solid black 
         }
-    .primero{ 
-            padding: 15px;
-            max-width: 1;
-            background-color: bisque;
+        table{ 
+            padding: 5px;
+            margin: auto;
+            text-align: center;
+            font-size: 1.5em;
+            background-color: rgba(200, 120, 23, 0.969);
+            border-radius: 20px;
+            border: 2px solid black;
         }
     h3{
+        margin: .7em;
         text-align: center;
         padding: .5em;
-        background-color: lightblue;}
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.69);
+        text-decoration: underline;
+    }
     .carru{
         display: flex;
-        width: 99%;
-        height: 100%;
+        width: auto;
+        height: 170px;
+        margin: 1em;
         }
     .carru img{
         width: 0px;
         flex-grow: 1;
         object-fit: cover;
-        opacity: .7;
-        transition: .5s ease;
+        opacity: .8;
+        transition: .7s ease;
         }
     .carru img:hover{
         cursor: crosshair;
         width: 35%;
         opacity: 1;
-        filter: contrast(120%);
+        filter: contrast(110%);
+        border: 3px solid black;
+        }
+    p {
+        padding: .5em;
+        background-color: rgba(255, 255, 255, 0.69);
+        border: .2em ridge black;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 20px;
+        margin: .5em;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.75);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: medium;
+        border-radius: 20px;
+        padding: 1em;
+        border: .10em solid red;
         }
     footer h4{
-        padding: .8em;
-        background-color: black;
-        color: white;
-        text-align: center;
-        font-size: xx-large;
-        margin: 0;
+        background-color: #b5b2b2;
+        padding: .5em;
+        border-radius: 12px;
+        margin: .5em;
+        border: .10em solid red;
         }
     }
 @media (min-width: 991px) {
+    *{
+        margin: 0; padding: 0; box-sizing: border-box;
+    }
         body{
-                background-color: #b5b2b2;
-                max-width: 100%;
-                padding: .5em;
-                border: 5px ridge orange;
-            }
-        .padre{
-                display: flex; flex-direction: row;
-            }
-        .uno{
-                text-align: center;
-            }
-        .dos{
-                margin: auto;
-                font-family: cursive;
-                text-align: center;
-                font-weight: 99%;
-            }
-        .tres a{
-                margin:auto;
-                background-color: #ececec;
-                padding: .5em;
-                border-radius: 35px;
-            }
-        main p {
-                padding: .5em;
-                background-color: white;
-                border: .2em ridge black;
-                border-radius: 12px;
-                text-align: center;
-                font-size: 20px;
-            }
-        main h2 {padding: .5em;
-                text-align: center;
-                border:8px solid rgb(255, 255, 255);}
-        img{
-                max-width: 100%;
-            }
-        table{ 
-                padding: 1em;
-                margin: auto;
-                background-color: bisque;
-            }
-        h3{
-            text-align: center;
-            padding: .5em;
-            background-color: lightblue;}
-        .carru{
-            display: flex;
-            width: 99%;
-            height: 100%;
-            }
-        .carru img{
-            width: 0px;
-            flex-grow: 1;
-            object-fit: cover;
-            opacity: .7;
-            transition: .5s ease;
-            }
-        .carru img:hover{
-            cursor: crosshair;
-            width: 35%;
-            opacity: 1;
-            filter: contrast(120%);
-            }
-        footer h4{
-            padding: .8em;
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-size: xx-large;
-            margin: 0;
-            }
+            max-width: 100%;
+            padding: .2em;
+            border: 5px ridge rgba(200, 120, 23, 0.969);
+            margin: 3px;
+            background-image: url(/Sin\ título.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
         }
+    .padre{
+            background-color: rgba(95, 96, 98, 0.718);
+            display: flex; justify-content: space-around;
+            padding: .5vw;
+            border-radius: 10px;
+            border-bottom: 2px dotted black;
+        }
+    .uno{
+            width: 2em;
+            margin: .2em;
+        }
+    .dos{
+            margin: auto;
+            font-family: cursive;
+            text-align: center;
+            font-size: 35%;
+            color: rgba(200, 120, 23, 0.969);
+        }
+    .tres{ margin: auto;
+        }
+    .tres a{
+            background-color: #000000;
+            border-radius: 35px;
+            padding: 5px;
+            color: white;
+        }
+    main h2 {
+        padding: .2em;
+        text-align: center;
+        margin: .5em;
+        color: rgba(0, 0, 0, 0.836);
+        background-color: rgba(95, 96, 98, 0.907);
+        border-radius: 18px;
+    
+        }
+    img{
+            max-width: 100%;
+            border-radius: 15px;
+            border: 2px solid black 
+        }
+        table{ 
+            padding: 5px;
+            margin: auto;
+            text-align: center;
+            font-size: 1.5em;
+            background-color: rgba(200, 120, 23, 0.969);
+            border-radius: 20px;
+            border: 2px solid black;
+        }
+    h3{
+        margin: .7em;
+        text-align: center;
+        padding: .5em;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.69);
+        text-decoration: underline;
+    }
+    .carru{
+        display: flex;
+        width: auto;
+        height: 170px;
+        margin: 1em;
+        }
+    .carru img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .7s ease;
+        }
+    .carru img:hover{
+        cursor: crosshair;
+        width: 35%;
+        opacity: 1;
+        filter: contrast(110%);
+        border: 3px solid black;
+        }
+    p {
+        padding: .5em;
+        background-color: rgba(255, 255, 255, 0.69);
+        border: .2em ridge black;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 20px;
+        margin: .5em;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.75);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: medium;
+        border-radius: 20px;
+        padding: 1em;
+        border: .10em solid red;
+        }
+    footer h4{
+        background-color: #b5b2b2;
+        padding: .5em;
+        border-radius: 12px;
+        margin: .5em;
+        border: .10em solid red;
+        }
+    }
