@@ -5,8 +5,7 @@
     body{
         max-width: 100%;
         padding: .2em;
-        border: 5px ridge rgba(200, 120, 23, 0.969);
-        margin: 3px;
+        margin: 7px;
         background-image: url(/Sin\ título.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -15,10 +14,10 @@
     }
 .padre{
         background-color: rgba(95, 96, 98, 0.718);
-        display: flex; justify-content: space-around;
+        display: flex;
+        justify-content: space-around;
         padding: .5vw;
         border-radius: 10px;
-        border-bottom: 2px dotted black;
     }
 .uno{
         width: 2em;
@@ -53,14 +52,14 @@ img{
         border-radius: 15px;
         border: 2px solid black 
     }
-    table{ 
-        padding: 5px;
-        margin: auto;
-        text-align: center;
-        font-size: 1.5em;
-        background-color: rgba(200, 120, 23, 0.950);
-        border-radius: 20px;
-        border: 2px solid black;
+table{ 
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgba(200, 120, 23, 0.950);
+    border-radius: 20px;
+    border: 2px solid black;
     }
 h3{
     margin: .7em;
@@ -73,23 +72,27 @@ h3{
 .carru{
     display: flex;
     width: auto;
-    height: 170px;
+    height: auto;
     margin: 1em;
+    background-color: #000000;
+    border-radius: 12px;
+    
     }
 .carru img{
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
-    opacity: .8;
+    opacity: .4;
     transition: .7s ease;
     }
 .carru img:hover{
-    cursor: crosshair;
-    width: 35%;
+    height: auto;
+    cursor: no-drop;
+    width: 80%;
     opacity: 1;
-    filter: contrast(110%);
-    border: 3px solid black;
-    }
+    filter: contrast(120%);
+    border: 3px solid rgba(200, 120, 23, 0.950);    
+}
 p {
     padding: .5em;
     background-color: rgba(255, 255, 255, 0.69);
@@ -117,6 +120,7 @@ footer h4{
     margin: .5em;
     border: .10em solid red;
     }
+a{text-decoration: none;}
 }
 @media (min-width:768px) and (max-width: 990px) {
     *{
