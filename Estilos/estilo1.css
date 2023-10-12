@@ -11,6 +11,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
+        font-family: 'Young Serif', serif;
     }
 .padre{
         background-color: rgba(95, 96, 98, 0.718);
@@ -29,6 +30,9 @@
         text-align: center;
         font-size: 35%;
         color: rgba(200, 120, 23, 0.969);
+        animation-name: latir;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
     }
 .tres{ margin: auto;
     }
@@ -37,6 +41,7 @@
         border-radius: 35px;
         padding: 5px;
         color: white;
+        margin: auto;
     }
 main h2 {
     padding: .2em;
@@ -45,7 +50,6 @@ main h2 {
     color: rgba(0, 0, 0, 0.836);
     background-color: rgba(95, 96, 98, 0.907);
     border-radius: 18px;
-
     }
 img{
         max-width: 100%;
@@ -121,6 +125,16 @@ footer h4{
     border: .10em solid red;
     }
 a{text-decoration: none;}
+
+.agrandar{animation-name: agrandar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes agrandar {
+    0%{transform: scale(.8);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(.8);}
+}
 }
 @media (min-width:768px) and (max-width: 990px) {
     *{
@@ -129,20 +143,20 @@ a{text-decoration: none;}
         body{
             max-width: 100%;
             padding: .2em;
-            border: 5px ridge rgba(200, 120, 23, 0.969);
-            margin: 3px;
+            margin: 7px;
             background-image: url(/Sin\ título.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
+            font-family: 'Young Serif', serif;
         }
     .padre{
             background-color: rgba(95, 96, 98, 0.718);
-            display: flex; justify-content: space-around;
+            display: flex;
+            justify-content: space-around;
             padding: .5vw;
             border-radius: 10px;
-            border-bottom: 2px dotted black;
         }
     .uno{
             width: 2em;
@@ -154,6 +168,9 @@ a{text-decoration: none;}
             text-align: center;
             font-size: 35%;
             color: rgba(200, 120, 23, 0.969);
+            animation-name: latir;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
         }
     .tres{ margin: auto;
         }
@@ -162,6 +179,7 @@ a{text-decoration: none;}
             border-radius: 35px;
             padding: 5px;
             color: white;
+            margin: auto;
         }
     main h2 {
         padding: .2em;
@@ -170,21 +188,20 @@ a{text-decoration: none;}
         color: rgba(0, 0, 0, 0.836);
         background-color: rgba(95, 96, 98, 0.907);
         border-radius: 18px;
-    
         }
     img{
             max-width: 100%;
             border-radius: 15px;
             border: 2px solid black 
         }
-        table{ 
-            padding: 5px;
-            margin: auto;
-            text-align: center;
-            font-size: 1.5em;
-            background-color: rgba(200, 120, 23, 0.969);
-            border-radius: 20px;
-            border: 2px solid black;
+    table{ 
+        padding: 5px;
+        margin: auto;
+        text-align: center;
+        font-size: 1.5em;
+        background-color: rgba(200, 120, 23, 0.950);
+        border-radius: 20px;
+        border: 2px solid black;
         }
     h3{
         margin: .7em;
@@ -197,23 +214,27 @@ a{text-decoration: none;}
     .carru{
         display: flex;
         width: auto;
-        height: 170px;
+        height: auto;
         margin: 1em;
+        background-color: #000000;
+        border-radius: 12px;
+        
         }
     .carru img{
         width: 0px;
         flex-grow: 1;
         object-fit: cover;
-        opacity: .8;
+        opacity: .4;
         transition: .7s ease;
         }
     .carru img:hover{
-        cursor: crosshair;
-        width: 35%;
+        height: auto;
+        cursor: no-drop;
+        width: 80%;
         opacity: 1;
-        filter: contrast(110%);
-        border: 3px solid black;
-        }
+        filter: contrast(120%);
+        border: 3px solid rgba(200, 120, 23, 0.950);    
+    }
     p {
         padding: .5em;
         background-color: rgba(255, 255, 255, 0.69);
@@ -241,6 +262,17 @@ a{text-decoration: none;}
         margin: .5em;
         border: .10em solid red;
         }
+    a{text-decoration: none;}
+    
+    .agrandar{animation-name: agrandar;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes agrandar {
+        0%{transform: scale(.8);}
+        50%{transform: scale(1.2);}
+        100%{transform: scale(.8);}
+    }
     }
 @media (min-width: 991px) {
     *{
@@ -249,20 +281,20 @@ a{text-decoration: none;}
         body{
             max-width: 100%;
             padding: .2em;
-            border: 5px ridge rgba(200, 120, 23, 0.969);
-            margin: 3px;
+            margin: 7px;
             background-image: url(/Sin\ título.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
+            font-family: 'Young Serif', serif;
         }
     .padre{
             background-color: rgba(95, 96, 98, 0.718);
-            display: flex; justify-content: space-around;
+            display: flex;
+            justify-content: space-around;
             padding: .5vw;
             border-radius: 10px;
-            border-bottom: 2px dotted black;
         }
     .uno{
             width: 2em;
@@ -274,6 +306,9 @@ a{text-decoration: none;}
             text-align: center;
             font-size: 35%;
             color: rgba(200, 120, 23, 0.969);
+            animation-name: latir;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
         }
     .tres{ margin: auto;
         }
@@ -282,6 +317,7 @@ a{text-decoration: none;}
             border-radius: 35px;
             padding: 5px;
             color: white;
+            margin: auto;
         }
     main h2 {
         padding: .2em;
@@ -290,21 +326,20 @@ a{text-decoration: none;}
         color: rgba(0, 0, 0, 0.836);
         background-color: rgba(95, 96, 98, 0.907);
         border-radius: 18px;
-    
         }
     img{
             max-width: 100%;
             border-radius: 15px;
             border: 2px solid black 
         }
-        table{ 
-            padding: 5px;
-            margin: auto;
-            text-align: center;
-            font-size: 1.5em;
-            background-color: rgba(200, 120, 23, 0.969);
-            border-radius: 20px;
-            border: 2px solid black;
+    table{ 
+        padding: 5px;
+        margin: auto;
+        text-align: center;
+        font-size: 1.5em;
+        background-color: rgba(200, 120, 23, 0.950);
+        border-radius: 20px;
+        border: 2px solid black;
         }
     h3{
         margin: .7em;
@@ -317,23 +352,27 @@ a{text-decoration: none;}
     .carru{
         display: flex;
         width: auto;
-        height: 170px;
+        height: auto;
         margin: 1em;
+        background-color: #000000;
+        border-radius: 12px;
+        
         }
     .carru img{
         width: 0px;
         flex-grow: 1;
         object-fit: cover;
-        opacity: .8;
+        opacity: .4;
         transition: .7s ease;
         }
     .carru img:hover{
-        cursor: crosshair;
-        width: 35%;
+        height: auto;
+        cursor: no-drop;
+        width: 80%;
         opacity: 1;
-        filter: contrast(110%);
-        border: 3px solid black;
-        }
+        filter: contrast(120%);
+        border: 3px solid rgba(200, 120, 23, 0.950);    
+    }
     p {
         padding: .5em;
         background-color: rgba(255, 255, 255, 0.69);
@@ -361,5 +400,15 @@ a{text-decoration: none;}
         margin: .5em;
         border: .10em solid red;
         }
+    a{text-decoration: none;}
+    
+    .agrandar{animation-name: agrandar;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
     }
-    /* Holaaaaaa */
+    @keyframes agrandar {
+        0%{transform: scale(.8);}
+        50%{transform: scale(1.2);}
+        100%{transform: scale(.8);}
+    }
+    }
