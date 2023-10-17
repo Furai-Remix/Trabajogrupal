@@ -91,7 +91,7 @@ h3{
     }
 .carru img:hover{
     height: auto;
-    cursor: no-drop;
+    cursor: crosshair;
     width: 80%;
     opacity: 1;
     filter: contrast(120%);
@@ -288,6 +288,7 @@ a{text-decoration: none;}
             background-position: center;
             background-attachment: fixed;
             font-family: 'Young Serif', serif;
+
         }
     .padre{
             background-color: rgba(95, 96, 98, 0.718);
@@ -406,9 +407,41 @@ a{text-decoration: none;}
         animation-duration: 3s;
         animation-iteration-count: infinite;
     }
+
     @keyframes agrandar {
         0%{transform: scale(.8);}
         50%{transform: scale(1.2);}
         100%{transform: scale(.8);}
     }
     }
+
+    .Formulario{
+        display: flex;
+        background-color: #b5b2b2;
+        flex-direction: column;
+        margin: 5em;
+
+
+    }
+    input{
+        margin: auto;
+    }
+    label{
+        margin: auto;
+    }
+    ::placeholder{
+        text-align: center;
+    }
+
+    table  img:hover {
+        transform: scale(1.5);
+
+
+        
+    }
+
+
+
+
+
+
