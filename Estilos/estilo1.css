@@ -19,10 +19,13 @@
         justify-content: space-around;
         padding: .5vw;
         border-radius: 10px;
+        flex-direction: row-reverse;
     }
 .uno{
         width: 2em;
-        margin: .2em;
+        margin: auto;
+        /* flex-direction: row-reverse; */
+
     }
 .dos{
         margin: auto;
@@ -157,10 +160,11 @@ a{text-decoration: none;}
             justify-content: space-around;
             padding: .5vw;
             border-radius: 10px;
+            flex-direction: row-reverse;
         }
     .uno{
             width: 2em;
-            margin: .2em;
+            margin: auto;
         }
     .dos{
             margin: auto;
@@ -296,10 +300,11 @@ a{text-decoration: none;}
             justify-content: space-around;
             padding: .5vw;
             border-radius: 10px;
+            flex-direction: row-reverse;
         }
     .uno{
             width: 2em;
-            margin: .2em;
+            margin: auto;
         }
     .dos{
             margin: auto;
@@ -435,10 +440,13 @@ a{text-decoration: none;}
 
     table  img:hover {
         transform: scale(1.5);
-
-
-        
     }
+   /* .Formulario h1 {
+        color: aliceblue;
+        margin: 15px;
+    } */
+    
+
 
 
 
