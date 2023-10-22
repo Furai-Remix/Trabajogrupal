@@ -421,7 +421,7 @@ a{text-decoration: none;}
     }
 
     Form{
-        display: flex;
+        display: grid;
         background-color: #a5a1a1;
         flex-direction: column;
         margin: 5em;
@@ -451,6 +451,7 @@ a{text-decoration: none;}
     .value{
         color: rgb(6, 255, 93);
         margin: auto;
+        
     } 
     
     /* .Formulario h1 {
