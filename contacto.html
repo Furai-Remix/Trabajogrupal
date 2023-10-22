@@ -18,20 +18,20 @@
      <form class="was-validated">
 
      <label class="form-label" for="nombre">NOMBRE:</label>
-     <input class="form-control"  id="nombre" placeholder="nombre" required> 
+     <input class="form-control"  id="nombre" placeholder="nombre"> 
 
      <label class="form-label" for="email">CORREO ELECTRONICO:</label>
-     <input class="form.control" type="email" name="email" id="email" placeholder="email" required>
+     <input class="form.control" type="email" name="email" id="email" placeholder="email">
 
      <label class="form-label" for="TELEFONO">TELEFONO:</label>
-     <input class="form-control" type="number" name="TELEFONO" id="TELEFONO" placeholder="telefono" required>
+     <input class="form-control" type="number" name="TELEFONO" id="TELEFONO" placeholder="telefono">
 
      <label class="form-label" for="comentario">COMENTARIO</label>
      <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="escribi tu comentario aqui"></textarea>
 
-     <div class="text-center">
-        <input class="btn btn-success" type="submit" value="ENVIAR">
-        <input class="btn btn-danger" type="reset" value="CANCELAR">
+     <div class="boton">
+        <input type="submit" id="ENVIAR" value="ENVIAR">
+        <input type="reset" id="CANCELAR" value="CANCELAR">
 
      </div>
 
@@ -40,29 +40,5 @@
 
      </div>
 
-</div>
- 
-
-</body>
-<script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-</script>
+    </div></body>
 </html>

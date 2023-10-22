@@ -422,20 +422,27 @@ a{text-decoration: none;}
 
     Form{
         display: grid;
-        background-color: #a5a1a1;
+        background-color: rgba(200, 120, 23, 0.969);
         flex-direction: column;
         margin: 5em;
+        border-radius: 15px;
+        border: 2px ridge blue;
+        padding: 2em;
 
 
     }
-    input{
+    input, .boton{
         margin: auto;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 255, 0.897);
     }
     label{
         margin: auto;
+        padding: .5em;
     }
     ::placeholder{
         text-align: center;
+        color: rgb(0, 0, 0);
     }
 
     table  img:hover {
@@ -445,15 +452,24 @@ a{text-decoration: none;}
 
     .text-center {
         margin: auto;
-        background-color: aqua;
-
+        background-color: rgba(200, 120, 23, 0.969);
+        padding: .5em;
+        border-radius: 3px;
+        border: 3px ridge blue;
+        text-align: center;
+        width: 50%;
     }
-    .value{
+    /* .value{
         color: rgb(6, 255, 93);
         margin: auto;
         
-    } 
-    
+    }  */
+    .form-control{
+        margin: auto;
+        width: 50%;
+        
+    }
+
     /* .Formulario h1 {
         color: aliceblue;
         margin: 15px;
