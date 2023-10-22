@@ -420,9 +420,9 @@ a{text-decoration: none;}
     }
     }
 
-    .Formulario{
+    Form{
         display: flex;
-        background-color: #b5b2b2;
+        background-color: #a5a1a1;
         flex-direction: column;
         margin: 5em;
 
@@ -441,7 +441,19 @@ a{text-decoration: none;}
     table  img:hover {
         transform: scale(1.5);
     }
-   /* .Formulario h1 {
+
+
+    .text-center {
+        margin: auto;
+        background-color: aqua;
+
+    }
+    .value{
+        color: rgb(6, 255, 93);
+        margin: auto;
+    } 
+    
+    /* .Formulario h1 {
         color: aliceblue;
         margin: 15px;
     } */
