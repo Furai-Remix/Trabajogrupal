@@ -374,7 +374,7 @@ a{text-decoration: none;}
     .carru img:hover{
         height: auto;
         cursor: no-drop;
-        width: 80%;
+        width: 20%;
         opacity: 1;
         filter: contrast(120%);
         border: 3px solid rgba(200, 120, 23, 0.950);    
@@ -422,23 +422,35 @@ a{text-decoration: none;}
 
     Form{
         display: grid;
-        background-color: rgba(200, 120, 23, 0.969);
+        background-color: rgba(95, 96, 98, 0.718);
         flex-direction: column;
-        margin: 5em;
+        margin: auto;
         border-radius: 15px;
-        border: 2px ridge blue;
-        padding: 2em;
+        border: 5px ridge rgba(200, 120, 23, 0.969);
+        padding-bottom: .5em;
+        font-weight: 1000;
+        color: rgb(144, 19, 19);
+        text-align: center;
+        max-width: 400px;
+        margin-top: 1em;
+        font-size: 14px;
 
 
     }
-    input, .boton{
+    input{
         margin: auto;
-        color: rgb(255, 255, 255);
-        background-color: rgba(0, 0, 255, 0.897);
+        color: #000000;
+        border-color: #000000;
+        padding: .5em;
+        border-radius: 15px;
     }
     label{
         margin: auto;
         padding: .5em;
+        font-size: 1.5em;
+        font-weight: 2px;
+        color: #000000;
+        
     }
     ::placeholder{
         text-align: center;
@@ -452,13 +464,36 @@ a{text-decoration: none;}
 
     .text-center {
         margin: auto;
-        background-color: rgba(200, 120, 23, 0.969);
+        background-color: rgba(95, 96, 98, 0.718);
         padding: .5em;
-        border-radius: 3px;
-        border: 3px ridge blue;
+        border-radius: 15px;
+        border: 3px ridge rgba(200, 120, 23, 0.969);
         text-align: center;
-        width: 50%;
+        max-width: 400px;
+        color: rgb(0, 0, 0);
     }
+    #CANCELAR, #ENVIAR{
+        background-color: rgba(0, 0, 255, 0.489);
+        color: aliceblue;
+        text-align: center;
+        font-size: .9em;
+        align-items: center;
+        margin-top: 8px;
+        outline: none;
+    }
+    #ENVIAR:active{
+        transform: scale(.9);      
+    }
+    #CANCELAR:active{
+        transform: scale(.9);      
+    }
+
+    textarea{
+        padding: 7px;
+    }
+
+
+
     /* .value{
         color: rgb(6, 255, 93);
         margin: auto;
