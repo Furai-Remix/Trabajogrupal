@@ -7,11 +7,11 @@ const $nombre = document.getElementById("nombre"),
 
 
       function validateInputs(){
-        const nombreregex =  /A-Za-záéíóúÁÉÍÓÚñÑ\s/;
+        const nombreregex = /^[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+$/;
 
         const emailregex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
 
-        const TELEFONOregex = /\d{3}-\d{3}-\d{4}/;
+        const TELEFONOregex = /^\d{3}-\d{3}-\d{4}$/;
 
 
         if ($nombre.value === ""){
@@ -24,13 +24,13 @@ const $nombre = document.getElementById("nombre"),
             alert("No dejar el campo del Telefono vacio")
         }
 
-        if (!nombreregex.test(nombre.value)){
+        if (!nombreregex.test($nombre.value)){
             alert("Ingrese un formato correcto de Nombre")
         }
-        if (!emailregex.test(email.value)){
+        if (!emailregex.test($email.value)){
             alert("Ingrese un formato correcto de Email")
         }
-        if (!TELEFONOregex.test(TELEFONO.value)){
+        if (!TELEFONOregex.test($TELEFONO.value)){
             alert("Ingrese un formato correcto de Telefono")
         }
 
