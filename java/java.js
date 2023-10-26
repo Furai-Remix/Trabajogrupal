@@ -17,20 +17,19 @@ const $nombre = document.getElementById("nombre"),
         if ($nombre.value === ""){
             alert("No dejar el campo de Nombre vacio")
         }
-        if ($email.value === ""){
+        else if ($email.value === ""){
             alert("No dejar el campo de Email vacio")
         }    
-        if ($TELEFONO.value === ""){
-            alert("No dejar el campo del Telefono vacio")
-        }
-
-        if (!nombreregex.test($nombre.value)){
-            alert("Ingrese un formato correcto de Nombre")
-        }
-        if (!emailregex.test($email.value)){
+        else if (!emailregex.test($email.value)){
             alert("Ingrese un formato correcto de Email")
         }
-        if (!TELEFONOregex.test($TELEFONO.value)){
+        else if ($TELEFONO.value === ""){
+            alert("No dejar el campo del Telefono vacio")
+        }
+        else if (!nombreregex.test($nombre.value)){
+            alert("Ingrese un formato correcto de Nombre")
+        }
+        else if (!TELEFONOregex.test($TELEFONO.value)){
             alert("Ingrese un formato correcto de Telefono")
         }
 
