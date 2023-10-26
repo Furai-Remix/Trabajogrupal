@@ -41,3 +41,14 @@ const $nombre = document.getElementById("nombre"),
             validateInputs();
         }
       })
+
+
+let url = "https://apis.datos.gob.ar/series/api/series/?ids=tmi_arg"
+fetch(url)
+.then(Response => Response.json())
+.then(data => mostrarData(data))
+.catch(error => console.log(error))
+
+const mostrarData = (data) => {
+    document.getElementById("divApi").innerHTML = data;
+}
