@@ -83,7 +83,6 @@ h3{
     margin: 1em;
     background-color: #000000;
     border-radius: 12px;
-    
     }
 .carru img{
     width: 0px;
@@ -128,7 +127,6 @@ footer h4{
     border: .10em solid red;
     }
 a{text-decoration: none;}
-
 .agrandar{animation-name: agrandar;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -222,7 +220,6 @@ a{text-decoration: none;}
         margin: 1em;
         background-color: #000000;
         border-radius: 12px;
-        
         }
     .carru img{
         width: 0px;
@@ -267,7 +264,6 @@ a{text-decoration: none;}
         border: .10em solid red;
         }
     a{text-decoration: none;}
-    
     .agrandar{animation-name: agrandar;
         animation-duration: 3s;
         animation-iteration-count: infinite;
@@ -292,7 +288,6 @@ a{text-decoration: none;}
             background-position: center;
             background-attachment: fixed;
             font-family: 'Young Serif', serif;
-
         }
     .padre{
             background-color: rgba(95, 96, 98, 0.718);
@@ -357,12 +352,12 @@ a{text-decoration: none;}
     }
     .carru{
         display: flex;
-        width: auto;
+        width: 70%;
         height: auto;
         margin: 1em;
         background-color: #000000;
         border-radius: 12px;
-        
+        margin: auto;
         }
     .carru img{
         width: 0px;
@@ -407,19 +402,16 @@ a{text-decoration: none;}
         border: .10em solid red;
         }
     a{text-decoration: none;}
-    
     .agrandar{animation-name: agrandar;
         animation-duration: 3s;
         animation-iteration-count: infinite;
     }
-
     @keyframes agrandar {
         0%{transform: scale(.8);}
         50%{transform: scale(1.2);}
         100%{transform: scale(.8);}
     }
     }
-
     Form{
         display: grid;
         background-color: rgba(95, 96, 98, 0.718);
@@ -434,8 +426,6 @@ a{text-decoration: none;}
         max-width: 400px;
         margin-top: 1em;
         font-size: 14px;
-
-
     }
     input{
         margin: auto;
@@ -450,18 +440,14 @@ a{text-decoration: none;}
         font-size: 1.5em;
         font-weight: 2px;
         color: #000000;
-        
     }
     ::placeholder{
         text-align: center;
         color: rgb(0, 0, 0);
     }
-
     table  img:hover {
         transform: scale(1.5);
     }
-
-
     .text-center {
         margin: auto;
         background-color: rgba(95, 96, 98, 0.718);
@@ -487,33 +473,10 @@ a{text-decoration: none;}
     #CANCELAR:active{
         transform: scale(.9);      
     }
-
     textarea{
         padding: 7px;
     }
-
-
-
-    /* .value{
-        color: rgb(6, 255, 93);
-        margin: auto;
-        
-    }  */
     .form-control{
         margin: auto;
         width: 50%;
-        
     }
-
-    /* .Formulario h1 {
-        color: aliceblue;
-        margin: 15px;
-    } */
-    
-
-
-
-
-
-
-

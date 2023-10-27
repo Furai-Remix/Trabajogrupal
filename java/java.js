@@ -43,12 +43,41 @@ const $nombre = document.getElementById("nombre"),
       })
 
 
-let url = "https://apis.datos.gob.ar/series/api/series/?ids=tmi_arg"
-fetch(url)
-.then(Response => Response.json())
-.then(data => mostrarData(data))
-.catch(error => console.log(error))
+window.addEventListener("load", ()=> {
+    let lon
+    let lat
 
-const mostrarData = (data) => {
-    document.getElementById("divApi").innerHTML = data;
-}
+    let temperaturaValor=document.getElementById("temperatura")
+    let iconoAnimado=document.getElementById("iconoAnimado")
+
+    
+
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(position =>{
+            console.log(position.coords.latitude)
+            lon=position.coords.longitude
+            lat=position.coords.latitude
+
+            const url = "https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=d6217a1921983f7eda3eab29bcde7044"
+            
+
+            fetch(url)
+            .then( Response => {return Response.json()})
+            .then( data =>{
+                console.log(data.main.temp)
+                let temp = Math.round(data.main.temp)
+                temperaturaValor.textContent = " Según tu ubicación la temperatura es: " + temp +"°"
+            } )
+            .catch(error =>{
+                console.log(error)
+            })
+
+        })
+          
+    }
+
+
+
+
+
+})
