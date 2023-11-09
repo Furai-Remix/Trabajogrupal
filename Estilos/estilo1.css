@@ -6,12 +6,44 @@
         max-width: 100%;
         padding: .2em;
         margin: 7px;
-        background-image: url(/Sin\ título.jpg);
+       
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
         font-family: 'Young Serif', serif;
+    }
+    header{
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: rgba(0, 0, 0, 0.75);
+        color: lightblue;
+        padding: .5vw;
+        border-bottom: 2px dotted black;
+        font-family: cursive;
+    }
+    
+    header > .home{
+        flex: 50%;
+        padding: 5px 20px 0px 20px;
+        text-align: center;
+    }
+    
+    .navbar{
+        background-color: rgba(0, 0, 0, 0.75);
+        text-align: center;
+        border-bottom: 2px solid black;
+        padding: 5px 20px 10px 20px;
+    }
+    
+    a{
+        color: black;
+        text-decoration: none;
+        padding: 0px 10px 0 10px;
+    }
+    
+    a:hover{
+        background-color: #b5b2b2;
     }
 .padre{
         background-color: rgba(95, 96, 98, 0.718);
@@ -145,12 +177,44 @@ a{text-decoration: none;}
             max-width: 100%;
             padding: .2em;
             margin: 7px;
-            background-image: url(/Sin\ título.jpg);
+        
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
             font-family: 'Young Serif', serif;
+        }
+        header{
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: lightblue;
+            padding: .5vw;
+            border-bottom: 2px dotted black;
+            font-family: cursive;
+        }
+        
+        header > .home{
+            flex: 50%;
+            padding: 5px 20px 0px 20px;
+            text-align: center;
+        }
+        
+        .navbar{
+            background-color: rgba(0, 0, 0, 0.75);
+            text-align: center;
+            border-bottom: 2px solid black;
+            padding: 5px 20px 10px 20px;
+        }
+        
+        a{
+            color: black;
+            text-decoration: none;
+            padding: 0px 10px 0 10px;
+        }
+        
+        a:hover{
+            background-color: #b5b2b2;
         }
     .padre{
             background-color: rgba(95, 96, 98, 0.718);
@@ -282,12 +346,44 @@ a{text-decoration: none;}
             max-width: 100%;
             padding: .2em;
             margin: 7px;
-            background-image: url(/Sin\ título.jpg);
+            
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
             font-family: 'Young Serif', serif;
+        }
+        header{
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: lightblue;
+            padding: .5vw;
+            border-bottom: 2px dotted black;
+            font-family: cursive;
+        }
+        
+        header > .home{
+            flex: 50%;
+            padding: 5px 20px 0px 20px;
+            text-align: center;
+        }
+        
+        .navbar{
+            background-color: rgba(0, 0, 0, 0.75);
+            text-align: center;
+            border-bottom: 2px solid black;
+            padding: 5px 20px 10px 20px;
+        }
+        
+        a{
+            color: black;
+            text-decoration: none;
+            padding: 0px 10px 0 10px;
+        }
+        
+        a:hover{
+            background-color: #b5b2b2;
         }
     .padre{
             background-color: rgba(95, 96, 98, 0.718);
