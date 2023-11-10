@@ -346,18 +346,15 @@ a{text-decoration: none;}
             max-width: 100%;
             padding: .2em;
             margin: 7px;
-            
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
+            background-color: #e5e5e5;
             font-family: 'Young Serif', serif;
         }
         header{
             display: flex;
-            flex-wrap: nowrap;
-            background-color: rgba(0, 0, 0, 0.75);
-            color: lightblue;
+            justify-content: left;
+            gap: 20%;
+            background-color: rgba(255, 255, 0, 0.708);
+            color: rgb(0, 0, 0);
             padding: .5vw;
             border-bottom: 2px dotted black;
             font-family: cursive;
@@ -370,7 +367,6 @@ a{text-decoration: none;}
         }
         
         .navbar{
-            background-color: rgba(0, 0, 0, 0.75);
             text-align: center;
             border-bottom: 2px solid black;
             padding: 5px 20px 10px 20px;
@@ -382,7 +378,7 @@ a{text-decoration: none;}
             padding: 0px 10px 0 10px;
         }
         
-        a:hover{
+        .navbar:hover{
             background-color: #b5b2b2;
         }
     .padre{
@@ -540,9 +536,6 @@ a{text-decoration: none;}
     ::placeholder{
         text-align: center;
         color: rgb(0, 0, 0);
-    }
-    table  img:hover {
-        transform: scale(1.5);
     }
     .text-center {
         margin: auto;
