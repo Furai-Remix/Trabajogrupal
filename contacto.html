@@ -8,16 +8,17 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header>
-        <div class="home">
-            <div class="logo">
-                <img src="favicon/Logo.ico" alt="Logo" width="55">
-            </div>
-            <div class="marca">
-                <h1>CONCENSIONARIA "LOS 4 FANTASTICOS"</h1>
-            </div>
-        </div>      
-    </header>
+    <header class="home">
+
+        <div>
+            <img src="favicon/Logo.ico" alt="Logo" width="55">
+        </div>
+        <div>
+            <h1>CONCENSIONARIA "LOS 4 FANTASTICOS"</h1>
+        </div>
+    </div>      
+</header>
+
 
     <div class="navbar">
         <nav>
@@ -25,12 +26,22 @@
            
             <a href="/contacto.html">Contacto</a>
         </nav>
+
     </div>  
- <div class="contairner mt-5">
-    <h2 class="text-center mb-5">FORMULARIO DE CONTACTO<br></h2>
-    <h2></h2>
-    <div class="row col-md-8 offset-md-2">
     
+ <div class="contairner mt-5">
+
+    <div class="maps"  style="border-radius: 15px; border: 5px solid rgba(200, 120, 23, 0.950); display: flex; align-items: center; height: auto; margin: auto;"  > <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d819.9341203181796!2d-58.44834021080835!3d-34.71182597225077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1698387894682!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae nobis, minus velit itaque explicabo ipsa officiis vero, maiores in cum beatae. Amet laborum nulla consequuntur iure ratione nesciunt quis! Quisquam deserunt ipsum dolorem est minus iusto, doloribus voluptatum temporibus commodi repudiandae, autem iure praesentium voluptatem at et doloremque? Aperiam sapiente maxime dolores deleniti cupiditate eaque harum labore voluptates sed et 
+    maiores architecto laborum unde eligendi ut, modi dolor consequuntur? Quisquam, officiis at eius aperiam delectus ex nihil exercitationem vel.</p>
+    </div>
+    
+    
+    <div class="formulario">
+        
+        <h2 class="text-center mb-5">FORMULARIO DE CONTACTO<br></h2>
+
      <form class="was-validated">
 
      <label class="form-label" for="nombre">NOMBRE:</label>
@@ -53,5 +64,14 @@
      <script src="/java/java.js"></script>
      </div>
     </div>
+
 </body>
+
+<footer>
+    <p> <a href="https://www.tiktok.com/"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA6ZJREFUWEftl2mojUEYx++1hnwhWaIkO9kikSKRLVF2SRKyliyFLMcWISRLtiQiO6VshZQtZN+ydIsofLRl//0172nMnfO+c+7x4Xy4U7/mfWd53v+ZeeaZ5xQW5FkpzDM9BaWCknYkmxVqibG2UB/KJhk2/T+pi+A2PAiZEyJoBIaWQMMQgzFjntE3Hw7G2YkTVJuJu6FnjkLc6edoGANvfHbjBJ1mQi8z6Qr1Lrhllv57oMiKjGsNHWEyNDXzTlH3zUbQIAYfNhPmUa8IFBA3rAKd62GSGTSY+og7IdMKab/lM9rvYTmIKcfc6dAMVsFLuAmt4Km1YulP+AQ1p/ehGdGV+lIOggYy95iZf4a6N4yCPaatHvVr275PkL1dWuZM/lKVvpnQCdrAb7gD12A1fDIr8Nh8cCv1RNDKawdU+sPJJEHa483wAWrYg63nHjzrBNbJ0P+K9tFwEdqDtkw++QWqwEczb4r5VtqMb4Vm06v9fg6NPB/sRtsFq/08z/dA/qLt7m71deH5smND3/xl2uZSr7T7fYIWMECB8D7I+eyibXoEdUErOBIUV+yiULEPqkERtIDPzpgfvCvaL4SlSYJSDFgEOg0dHEPjeN9u2hRHFE98RUf6kOnQ1kVOHI2VX2pFgwQtNgPlnHJYu+zkZSxchc4ZxETNur/k7FtAQdEuX3lR0AwSpO3Stt01Bm1DOjGKththWoKgbfSPz2BHJ7Ay6FvajXTx+VDKDHpCrdNhF7U1gU0wNUGQjvkEkM/Jj+yiU6bTJv/RKgUJ8hnaz8zh4NtOV59iku4x+Y/8yC5y8kqQArlIiQXNYWZ0rxULapbdoTwfMO8zqNc5gr7xXh7kGsuSBGlPpdy3ZbVoV6JVHd6DroGzzsf68L4XdOzfgkKHQkRUyvCgxE2l2MXt8yENWg4vwJeU6T6yj3tcYFSQtIOoRMiZ5dQqunrW2j/IJ+h/Xx3OAv5zdSgcKCyki0/QAHqPgy5LxYq4y1XXjJIv5dq6DtzL1RWj9wZm9fWsi/xokiDFmeiGzjX98Amy0w/9cYhSnb9jkxI0OWyUxvqMZ9um6+IGKIK/g5qugUyC+jEwylMUJ4S2MJfiprDe1DguyVf6OsQouE69A5TkKwvQbR1SoiRfl7RS2ejUykY7n504QTqeayBKykMEhIxRFqDTZcem9LyQP4ryoQ3QOORrMWOU8M2CE3F2QgRF8/Pmr3SOC5Pd9GxWKDvLJRxdKihp4f4Aq8K5JbFrH0EAAAAASUVORK5CYII="/></a></i></p>
+     <p><a href="https://www.youtube.com/"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAaFJREFUWEftl09KAzEUxlsLaqEHEBRELVjBvVvP4A0Etx5B29qitjco+OcyuvQA/kVxo1u3deH3QQJBQ9+bZKaNMIGPCTMveb+8JJOXaiWxUk2Mp1ICSTMyiwjVAbUFbULv0I0LWRQQ+12BWsYxnds631u/XdQ7eQBZh3Po7BPacxw3Ud+GFqTpwfdMQPNosA5tGLn1NbxbhIbQCHpWOPeZqIAOTBiXFU4GBuhFYRsMxDltKx1MJUIlkLTLygiVEZqwY1X/oeTW0C5GRGkKD8Y76BAaQ99Gvrrv3SPsX6U1tAoDHg2a8gajD2hHY+yxIYwIdAwjzq2mnMPoGrrXGHtsVGvo3wNdYeQPKUUoBqjze3n4MsasU5Yc0CVGye0bUgqJUAwQ864TdyR5TFnhQPuGmimsdCs5hc0FFJrCcr32pAjZ726S7yb4TPptks8fI4GeQhYQ2mQCmuTDXoP4/ILOIHs74dFTUwIewa6vjZCyzz9mhCGUBXSfjHTDaZFbhEJh2W4JIhgvlLzP3RYdoRhYcRdFdR7SWNrWIX1GtUkO6AfjbXMl7A9vjAAAAABJRU5ErkJggg=="/></i></a> </p>
+     <p>Email de la Enpresa: loscuatrofan@gmail.com</p>
+    <br>
+     <p>Izquierdos Reservados 2023</p>
+ </footer>
 </html>

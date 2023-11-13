@@ -151,13 +151,7 @@ footer{
     padding: 1em;
     border: .10em solid red;
     }
-footer h4{
-    background-color: #b5b2b2;
-    padding: .5em;
-    border-radius: 12px;
-    margin: .5em;
-    border: .10em solid red;
-    }
+
 a{text-decoration: none;}
 .agrandar{animation-name: agrandar;
     animation-duration: 3s;
@@ -320,13 +314,7 @@ a{text-decoration: none;}
         padding: 1em;
         border: .10em solid red;
         }
-    footer h4{
-        background-color: #b5b2b2;
-        padding: .5em;
-        border-radius: 12px;
-        margin: .5em;
-        border: .10em solid red;
-        }
+    
     a{text-decoration: none;}
     .agrandar{animation-name: agrandar;
         animation-duration: 3s;
@@ -466,7 +454,7 @@ a{text-decoration: none;}
         filter: contrast(120%);
         border: 3px solid rgba(200, 120, 23, 0.950);    
     }
-    p {
+    /* p {
         padding: .5em;
         background-color: rgba(255, 255, 255, 0.69);
         border: .2em ridge black;
@@ -474,25 +462,18 @@ a{text-decoration: none;}
         text-align: center;
         font-size: 20px;
         margin: .5em;
-    }
+    } */
     footer{
         display: flex;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.75);
+        justify-content: space-around;
+        background-color: rgba(255, 255, 0, 0.708);
         color: rgb(0, 0, 0);
         text-align: center;
         font-size: medium;
         border-radius: 20px;
         padding: 1em;
-        border: .10em solid red;
         }
-    footer h4{
-        background-color: #b5b2b2;
-        padding: .5em;
-        border-radius: 12px;
-        margin: .5em;
-        border: .10em solid red;
-        }
+   
     a{text-decoration: none;}
     .agrandar{animation-name: agrandar;
         animation-duration: 3s;
@@ -504,6 +485,7 @@ a{text-decoration: none;}
         100%{transform: scale(.8);}
     }
     }
+
     Form{
         display: grid;
         background-color: rgba(95, 96, 98, 0.718);
@@ -569,3 +551,21 @@ a{text-decoration: none;}
         margin: auto;
         width: 50%;
     }
+
+    .maps {
+
+       display: flex;
+       justify-content: space-around;
+       align-content: flex-start;
+        position: static;
+        left: 100px;
+        top: 250px;
+        
+    }
+    
+    .formulario{
+        position: static;
+        left: 600px;
+        top: 120px;
+    }
+
