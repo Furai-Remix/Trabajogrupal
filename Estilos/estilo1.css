@@ -405,7 +405,6 @@ a{text-decoration: none;}
         text-align: center;
         margin: .5em;
         color: rgba(0, 0, 0, 0.836);
-        background-color: rgba(95, 96, 98, 0.907);
         border-radius: 18px;
         }
     img{
@@ -427,7 +426,6 @@ a{text-decoration: none;}
         text-align: center;
         padding: .5em;
         border-radius: 20px;
-        background-color: rgba(255, 255, 255, 0.69);
         text-decoration: underline;
     }
     .carru{
@@ -583,4 +581,10 @@ a{text-decoration: none;}
         border-radius: 15px;
         font-size: 14px;
     
+    }
+    .presentacion{
+        font-size: xx-large;
+        text-align: center;
+        margin: 1em;
+
     }
