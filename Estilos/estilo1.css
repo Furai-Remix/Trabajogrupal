@@ -487,7 +487,7 @@ a{text-decoration: none;}
         border: 5px ridge rgba(200, 120, 23, 0.969);
         padding-bottom: .5em;
         font-weight: 1000;
-        color: rgb(144, 19, 19);
+        color: rgb(0, 0, 0);
         text-align: center;
         max-width: 400px;
         margin-top: 1em;
@@ -516,13 +516,13 @@ a{text-decoration: none;}
         background-color: rgba(95, 96, 98, 0.718);
         padding: .5em;
         border-radius: 15px;
-        border: 3px ridge rgba(200, 120, 23, 0.969);
+        border: 3px ridge rgb(230, 161, 35);
         text-align: center;
         max-width: 400px;
         color: rgb(0, 0, 0);
     }
     #CANCELAR, #ENVIAR{
-        background-color: rgba(0, 0, 255, 0.489);
+        background-color: rgb(230, 161, 35);
         color: aliceblue;
         text-align: center;
         font-size: .9em;
@@ -544,7 +544,7 @@ a{text-decoration: none;}
         width: 50%;
     }
 
-    .maps {
+   /* .maps {
 
        display: flex;
        justify-content: space-around;
@@ -554,10 +554,32 @@ a{text-decoration: none;}
         top: 250px;
         
     }
-    
+     */
     .formulario{
-        position: static;
+        /* position: static;
         left: 600px;
-        top: 120px;
+        top: 120px; */
     }
 
+    .contairner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2em;
+        gap: 8em;
+
+    }
+    .was-validated{
+        width: 40em;
+    }
+    .mapa{
+        background-color: rgba(95, 96, 98, 0.718);
+        border: 5px ridge rgba(200, 120, 23, 0.969);
+        padding: .5em;
+        font-weight: 1000;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        max-width: 500px;
+        font-size: 14px;
+    
+    }
