@@ -580,6 +580,7 @@ a{text-decoration: none;}
         color: rgb(0, 0, 0);
         text-align: center;
         max-width: 500px;
+        border-radius: 15px;
         font-size: 14px;
     
     }
