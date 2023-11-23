@@ -56,7 +56,7 @@
 .uno{
         width: 2em;
         margin: auto;
-        /* flex-direction: row-reverse; */
+        
 
     }
 .dos{
@@ -344,7 +344,7 @@ a{text-decoration: none;}
             background-color: rgb(230, 161, 35);
             color: rgb(0, 0, 0);
             padding: .5vw;
-            border-bottom: 2px dotted black;
+            border-bottom: 2px solid black;
             font-family: cursive;
         }
         
@@ -356,7 +356,6 @@ a{text-decoration: none;}
         
         .navbar{
             text-align: center;
-            border-bottom: 2px solid black;
             padding: 5px 20px 10px 20px;
         }
         
@@ -366,8 +365,9 @@ a{text-decoration: none;}
             padding: 0px 10px 0 10px;
         }
         
-        .navbar:hover{
+        .navbar a:hover {
             background-color: #b5b2b2;
+            
         }
     .padre{
             background-color: rgba(95, 96, 98, 0.718);
@@ -542,23 +542,6 @@ a{text-decoration: none;}
         width: 50%;
     }
 
-   /* .maps {
-
-       display: flex;
-       justify-content: space-around;
-       align-content: flex-start;
-        position: static;
-        left: 100px;
-        top: 250px;
-        
-    }
-     */
-    .formulario{
-        /* position: static;
-        left: 600px;
-        top: 120px; */
-    }
-
     .contairner{
         display: flex;
         justify-content: center;
@@ -587,4 +570,13 @@ a{text-decoration: none;}
         text-align: center;
         margin: 1em;
 
+    }
+
+    #contenidocarrusel{
+        max-width: 1400px;
+    margin: auto;
+    margin-top: 10px;
+    width: 70%;
+    height: 450px;
+    overflow: hidden;
     }

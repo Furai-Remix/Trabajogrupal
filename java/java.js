@@ -39,6 +39,8 @@ const $nombre = document.getElementById("nombre"),
         if (e.target === $ENVIAR) {
             e.preventDefault();
             validateInputs();
+
+        
         }
       })
 
