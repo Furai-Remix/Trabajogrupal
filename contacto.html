@@ -27,7 +27,7 @@
  <div class="contairner">
     <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.9235909430213!2d-58.365655353285185!3d-34.60802561081205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3356007d8d2e3%3A0xe07c922811e99481!2sBS%20AS%20PANCHO%20TASSO!5e0!3m2!1ses-419!2sar!4v1699919444267!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><p style="font-size: large;padding-top: 5px; ">Ubicación: Al frente del puente de la mujer. <br> Horario de atención: de 7 a 19. <br> Dias de apertura: De Lunes a Viernes.</p></div>
     <div class="formulario">
-        <form class="was-validated">
+        <form class="was-validated" id="formu">
         <h3>FORMULARIO DE CONTACTO</h3>
      <label class="form-label" for="nombre">NOMBRE:</label>
      <input class="form-control"  id="nombre" placeholder="Nombre"> 
@@ -42,7 +42,7 @@
      <textarea class="form-control" name="comentario" id="comentario" cols="30" rows="10" placeholder="Escribi tu comentario aqui"></textarea>
 
      <div class="boton">
-        <input type="submit" id="ENVIAR" value="ENVIAR">
+        <input type="submit" onclick="return validateInputs()" id="ENVIAR" value="ENVIAR">
         <input type="reset" id="CANCELAR" value="CANCELAR">
      </div>
     </form>

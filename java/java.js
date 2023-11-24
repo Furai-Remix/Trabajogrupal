@@ -3,16 +3,11 @@ const $nombre = document.getElementById("nombre"),
       $email = document.getElementById("email"),
       $TELEFONO = document.getElementById("TELEFONO"),
       $ENVIAR = document.getElementById("ENVIAR");
-      
-
 
       function validateInputs(){
         const nombreregex = /^[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+$/;
-
         const emailregex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
-
         const TELEFONOregex = /[d{3}-\d{3}-\d{4}]/;
-
 
         if ($nombre.value === ""){
             alert("No dejar el campo de Nombre vacio")
@@ -32,13 +27,15 @@ const $nombre = document.getElementById("nombre"),
         else if (!TELEFONOregex.test($TELEFONO.value)){
             alert("Ingrese un formato correcto de Telefono")
         }
-
+        else {
+            formu.reset();
+            alert("Formulario enviado correctamente")
+            return false
+        }
       }
-
       document.addEventListener("click", (e) => {
         if (e.target === $ENVIAR) {
             e.preventDefault();
-            validateInputs();
 
         
         }
@@ -48,11 +45,8 @@ const $nombre = document.getElementById("nombre"),
 window.addEventListener("load", ()=> {
     let lon
     let lat
-
     let temperaturaValor=document.getElementById("temperatura")
     let iconoAnimado=document.getElementById("iconoAnimado")
-
-    
 
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position =>{
@@ -61,7 +55,6 @@ window.addEventListener("load", ()=> {
             lat=position.coords.latitude
 
             const url = "https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=d6217a1921983f7eda3eab29bcde7044"
-            
 
             fetch(url)
             .then( Response => {return Response.json()})
@@ -73,13 +66,6 @@ window.addEventListener("load", ()=> {
             .catch(error =>{
                 console.log(error)
             })
-
         })
-          
     }
-
-
-
-
-
 })
